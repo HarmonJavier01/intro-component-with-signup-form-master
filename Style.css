@@ -1,0 +1,206 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    background-image: url(images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+}
+
+.main-frame {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6.4rem;
+    margin: 1rem;
+}
+
+.close {
+    display: none;
+}
+
+.margin-top-md {
+    margin-top: 2.4rem;
+}
+
+.main-heading {
+    font-size: 4.8rem;
+    color: white;
+}
+
+.introduction-box {
+    width: 50rem;
+}
+
+.description {
+    color: white;
+    font-weight: 500;
+}
+
+.signup-form {
+    width: 60rem;
+}
+
+.free-trial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    text-align: center;
+    background-color: hsl(248, 32%, 49%);
+    color: white;
+    box-shadow: 0 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    border-radius: 1rem;
+    background-color: white;
+    padding: 4.8rem;
+    box-shadow: 0 1rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.form-element {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+}
+
+.input-field,
+.btn,
+.free-trial {
+    height: 6rem;
+    border-radius: 1rem;
+    border: none;
+}
+
+.input-field {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 700;
+    padding: 2.4rem;
+    border: solid 1px hsl(246, 25%, 77%);
+    border-radius: 5px;
+    outline: none;
+}
+
+.input-field:focus {
+    outline: solid 1px hsl(248, 32%, 49%);
+}
+
+.btn {
+    background-color: hsl(154, 59%, 51%);
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+    box-shadow: 0 5px 0 hsla(154, 59%, 51%, 0.8);
+    cursor: pointer;
+}
+
+.terms-services {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    color: hsl(246, 25%, 77%);
+}
+
+.terms-services span {
+    color: hsl(0, 100%, 74%);
+}
+
+.input-label {
+    color: hsl(0, 100%, 74%);
+    font-style: italic;
+    align-self: flex-end;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.input-field {
+    width: 100%;
+    padding-right: 40px;
+    /* Adjust the padding to leave space for the image */
+}
+
+.input-image {
+    position: absolute;
+    top: 13%;
+    right: 2.4rem;
+    /* Adjust the right position of the image */
+    width: 7%;
+    /* Set the width of the image */
+}
+
+
+/* Media Queries */
+
+@media (max-width: 75em) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media (max-width: 60em) {
+    .section-signup {
+        gap: 2.4rem;
+    }
+    .signup-form {
+        width: 50%;
+    }
+}
+
+@media (max-width: 55em) {
+    .section-signup {
+        flex-direction: column;
+    }
+    .main-heading,
+    .description {
+        text-align: center;
+    }
+    .signup-form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 27em) {
+    .introduction-box {
+        width: 65%;
+    }
+    .main-heading {
+        font-size: 3.2rem;
+    }
+    .free-trial {
+        flex-direction: column;
+        height: 9rem;
+    }
+    .signup-form {
+        width: 65%;
+    }
+    .form {
+        padding: 2.4rem;
+        gap: 1rem;
+    }
+    .terms-services {
+        font-size: 1rem;
+    }
+}
